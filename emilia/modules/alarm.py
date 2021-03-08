@@ -1,8 +1,8 @@
-from julia import tbot
+from emilia import tbot
 from telethon import *
 from pymongo import MongoClient
-from julia import MONGO_DB_URI, CMD_HELP
-from julia.events import register
+from emilia import MONGO_DB_URI, CMD_HELP
+from emilia.events import register
 import dateparser
 import os, asyncio
 
@@ -154,7 +154,7 @@ file_helpo = file_help.replace("_", " ")
 __help__ = """
  - /setalarm <(date) (time)|zone|reason>: sets a alarm/reminder 
 **Syntax:** `/setalarm 01/01/2000 10:00:00 AM | America/New_York | breakfast`
-**NOTE:** Please turn on notifications for @MissJuliaRobot otherwise you will not get notification for the alarm !
+**NOTE:** Please turn on notifications for @Mr_Shadoe_robot otherwise you will not get notification for the alarm !
 """
 
 CMD_HELP.update({file_helpo: [file_helpo, __help__]})
